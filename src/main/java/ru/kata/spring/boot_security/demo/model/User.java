@@ -26,7 +26,7 @@ public class User implements UserDetails {
 
     private String password;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade=CascadeType.PERSIST)
+    @ManyToMany(fetch = FetchType.LAZY, cascade=CascadeType.MERGE)
     private Set<Role> roles;
 
 
